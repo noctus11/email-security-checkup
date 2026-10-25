@@ -7,6 +7,10 @@ A small n8n workflow that checks whether a business domain is protected against 
 2. The workflow looks up the domain's public SPF and DMARC DNS records using Google's public DNS service.
 3. An AI model (Gemini) reads the records and writes a short report with a grade from A to F, what the records mean, the risk, and recommended fixes.
 
+   ## Example reports
+   ![Strong protection](report-good.png)
+   ![Weak protection](report-weak.png)
+   
 ## Why it matters
 Small businesses are often impersonated in phishing and invoice scams because their domains have no DMARC record or a weak one. This tool turns raw DNS data into something a non-technical owner can understand.
 
